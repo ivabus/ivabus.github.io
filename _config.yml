@@ -1,0 +1,41 @@
+name: "Ivan Bushchik"
+description: ivabus's site/blog
+url: https://ivabus.dev
+lang: en
+timezone: Europe/Moscow
+
+permalink: "/:year/:month/:day/:title/"
+
+collections:
+  projects:
+    output: true
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'LICENSE', 'shell.nix', 'gemset.nix']
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-toc
+  - jekyll-feed
+  - jekyll-minifier
+  - rouge
+  - jekyll-paginate
+
+markdown: kramdown
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    span:
+      line_numbers: false
+    block:
+      line_numbers: true
+      start_line: 1
+    wrap: true
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+
+jekyll-minifier:
+  preserve_line_breaks: true

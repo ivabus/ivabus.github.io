@@ -1,0 +1,7 @@
+_layouts/, assets/css/ licensed under GPLv3. See LICENSE.GPLv3
+
+_posts/, _projects/, posts_media/, projects_media/ about.md abouttext.md index.md licensed under CC-by-sa 4.0. See LICENSE.CC-by-sa.
+
+assets/fonts/JetBrainsMono-VariableFont_wght.ttf belongs to JetBrains and licensed under [SIL OFL](https://github.com/JetBrains/JetBrainsMono/blob/master/OFL.txt). (Distributing binary)
+
+Anything else: licensed under MIT license. See LICENSE.MIT.

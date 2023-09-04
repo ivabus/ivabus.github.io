@@ -1,0 +1,506 @@
+@font-face {
+	font-family: "JetBrains Mono";
+	src: url(/assets/fonts/JetBrainsMono-VariableFont_wght.ttf)format("truetype")
+}
+
+a, abbr, acronym, address, applet, article, aside, audio, big, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, embed, fieldset, figcaption, figure, footer, form, header, hgroup, html, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, output, q, ruby, s, samp, section, small, span, strike, summary, table, tbody, td, tfoot, th, thead, time, tr, tt, u, var, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	font-family: "JetBrains Mono";
+	vertical-align: baseline
+}
+
+body {
+	line-height: 1;
+	font: 14px/1.7"JetBrains Mono", monospace
+}
+
+h1, h2, h3, h4, h5, h6, p, pre {
+	padding: 0;
+	font-style: normal;
+	font-weight: 400;
+	vertical-align: baseline
+}
+
+b, blockquote, em, h1, h2, h3, h4, h5, h6, i, ol, p, pre, strong, sub, sup, ul {
+	border: 0;
+	font-family: "JetBrains Mono";
+	font-variant: normal;
+}
+
+b, body, em, i, ol, strong, sub, sup, ul {
+	margin: 0;
+	padding: 0
+}
+
+b, ol, strong, sub, sup, ul {
+	font-style: normal;
+	font-weight: 700
+}
+
+blockquote, em, i, ol, sub, sup, ul {
+	font-weight: 400
+}
+
+b, blockquote, body, em, i, ol, strong, ul {
+	vertical-align: baseline
+}
+
+ul {
+	padding: 0 0 0 30px;
+}
+
+ol {
+	list-style: bullet;
+	padding: 0 0 0 30px;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block
+}
+
+blockquote, q {
+	quotes: none
+}
+
+blockquote:after, blockquote:before, q:after, q:before {
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+a, a:active, a:visited {
+	text-decoration: none;
+
+	padding-bottom: 2px;
+	color: #2aa198;
+
+}
+
+p, pre {
+	margin: 0 0 15px
+}
+
+ol li, ul li {
+	margin-top: 10px;
+	margin-bottom: 10px
+}
+
+article .meta, blockquote, em, i {
+	font-style: italic
+}
+
+small, sub, sup {
+	font-size: .86em
+}
+
+sub, sup {
+	vertical-align: super
+}
+
+sub {
+	vertical-align: sub
+}
+
+code {
+	border-radius: 6px;
+	padding-left: 3px;
+	padding-right: 3px;
+	color: #eee8d5;
+}
+
+.highlighter-rouge .rouge-table {
+	width: 600px;
+	width: auto;
+	padding: 10px 0px 10px 30px;
+}
+
+.highlight {
+	background-color: #073642;
+	border-radius: 6px;
+}
+
+blockquote {
+	margin: 0;
+	padding: 0 20px;
+	border-left: 2px solid #000;
+	line-height: 1.5em;
+	border-color: #cb4b16
+}
+
+abbr, acronym {
+	cursor: help;
+	letter-spacing: 1px;
+	border-bottom: 1px dashed
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 20px;
+	margin: 0 0 10px
+}
+
+h2, h3, h4, h5, h6 {
+	font-size: 18px
+}
+
+h3, h4, h5, h6 {
+	font-size: 16px
+}
+
+blockquote, h4, h5, h6 {
+	font-size: 14px
+}
+
+.clear {
+	clear: both
+}
+
+.float-left {
+	float: left
+}
+
+.float-right {
+	float: right
+}
+
+.text-left {
+	text-align: left
+}
+
+.text-right {
+	text-align: right
+}
+
+.text-center, article img {
+	text-align: center
+}
+
+.text-justify {
+	text-align: justify
+}
+
+.img-left, img.left {
+	float: left;
+	margin: 4px 10px 4px 0
+}
+
+.img-right {
+	float: right;
+	margin: 4px 0 4px 10px
+}
+
+.img-middle {
+	vertical-align: middle
+}
+
+.nopadding {
+	padding: 0
+}
+
+.nounderline {
+	text-decoration: underline
+}
+
+.project-url {
+	font-size: 9pt
+}
+
+.date {
+	color: #586e75
+}
+
+#page {
+	width: 600px;
+	margin: 0 auto;
+	position: relative
+}
+
+#footer, #header {
+	width: 600px;
+	margin: 20px auto 0
+}
+
+#header h1 {
+	font-size: 32px;
+	margin-bottom: 4px
+}
+
+#header h1 a, article h1 a, body {
+	border: 0
+}
+
+#footer {
+	margin: 10px auto 20px;
+	padding-top: 10px;
+	font-size: .85em;
+	border-top: 1px solid #073642
+}
+
+#sidebar a {
+	border: 0;
+	display: inline;
+	padding: 0 4px;
+	font: 1.2em"JetBrains Mono", monospace
+}
+
+.pagination a {
+	color: #b58900;
+}
+
+.pagination span {
+	color:#839496;
+}
+
+article h1, article h2 {
+	font-size: 16pt;
+	margin: 0 0 10px
+}
+
+article h2 {
+	font-size: 15pt
+}
+
+article h3, article h4 {
+	font-size: 14pt;
+	margin: 0 0 10px
+}
+
+article h4 {
+	font-size: 13pt
+}
+
+article h5, article h6 {
+	font-size: 12pt;
+	margin: 0 0 10px
+}
+
+article h6 {
+	font-size: 11pt
+}
+
+article img {
+	display: block;
+	width: 100%;
+	max-width: inherit
+	border-radius: 5px;
+}
+
+article .meta {
+	padding-top: 6px;
+	font-size: .85em
+}
+
+img.left {
+	margin: 0 1em 1em 0
+}
+
+img.right {
+	float: right;
+	margin: 0 0 1em 1em
+}
+
+img.center {
+	display: block;
+	margin: 0 auto 1em
+}
+
+#header, #sidebar, img.center {
+	text-align: center
+}
+
+#sidebar {
+	position: relative;
+	display: inline;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	width: auto;
+	top: 0;
+	margin-bottom: 20px
+}
+
+.menu {
+	padding: 0
+}
+
+#toc {
+	background-color: #073642;
+	border-radius: 6px;
+	border: 0 0 0 30px;
+	width: auto;
+	padding: 10px 0px 10px 30px;
+	margin-bottom: 10px;
+}
+
+.toc-entry {
+	border: 0;
+}
+
+#sidebar li {
+	list-style: none;
+	display: inline
+}
+
+@media all and (max-width:660px) {
+	#content, #footer, #header, #page {
+		width: auto;
+		padding-left: 10.5px;
+		padding-right: 10.5px
+	}
+}
+
+body, html {
+	color: #839496
+}
+
+body, html {
+	background-color: #002a35
+}
+
+a:hover {
+	color: #b58900
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #b58900
+}
+
+h1 a, h1 a:active, h1 a:visited {
+	color: #cb4b16
+}
+
+#sidebar a:hover, h1 a:hover {
+	background-color: #002a35;
+	color: #cb4b16
+}
+
+article h1 a.anchor {
+	color: #2aa198
+}
+
+#sidebar a:hover {
+	color: #b58900
+}
+
+#footer, h1 a:hover {
+	border-color: #002a35
+}
+
+
+.highlight table td {
+	padding: 5px;
+}
+
+.highlight table pre {
+	margin: 0;
+}
+
+.highlight, .highlight .w {
+	color: #586e75;
+}
+
+.highlight .err {
+	color: #002b36;
+	background-color: #dc322f;
+}
+
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+	color: #657b83;
+}
+
+.highlight .cp {
+	color: #b58900;
+}
+
+.highlight .nt {
+	color: #b58900;
+}
+
+.highlight .o, .highlight .ow {
+	color: #93a1a1;
+}
+
+.highlight .p, .highlight .pi {
+	color: #93a1a1;
+}
+
+.highlight .gi {
+	color: #859900;
+}
+
+.highlight .gd {
+	color: #dc322f;
+}
+
+.highlight .gh {
+	color: #268bd2;
+	background-color: #002b36;
+	font-weight: bold;
+}
+
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+	color: #6c71c4;
+}
+
+.highlight .kc {
+	color: #cb4b16;
+}
+
+.highlight .kt {
+	color: #cb4b16;
+}
+
+.highlight .kd {
+	color: #cb4b16;
+}
+
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+	color: #859900;
+}
+
+.highlight .sa {
+	color: #6c71c4;
+}
+
+.highlight .sr {
+	color: #2aa198;
+}
+
+.highlight .si {
+	color: #d33682;
+}
+
+.highlight .se {
+	color: #d33682;
+}
+
+.highlight .nn {
+	color: #b58900;
+}
+
+.highlight .nc {
+	color: #b58900;
+}
+
+.highlight .no {
+	color: #b58900;
+}
+
+.highlight .na {
+	color: #268bd2;
+}
+
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+	color: #859900;
+}
+
+.highlight .ss {
+	color: #859900;
+}
