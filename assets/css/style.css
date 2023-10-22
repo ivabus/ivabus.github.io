@@ -142,21 +142,24 @@ abbr, acronym {
 	border-bottom: 1px dashed
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
 	font-size: 20px;
-	margin: 0 0 10px
+	margin: 0 0 10px;
 }
 
-h2, h3, h4, h5, h6 {
-	font-size: 18px
+h2 {
+	font-size: 18px;
+	margin: 0 0 10px;
 }
 
 h3, h4, h5, h6 {
-	font-size: 16px
+	font-size: 16px;
+	margin: 0 0 10px;
 }
 
 blockquote, h4, h5, h6 {
-	font-size: 14px
+	font-size: 14px;
+	margin: 0 0 10px;
 }
 
 .clear {
