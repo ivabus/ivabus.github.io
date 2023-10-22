@@ -1,0 +1,15 @@
+diff --git a/arch/riscv/boot/dts/starfive/jh7110.dtsi b/arch/riscv/boot/dts/starfive/jh7110.dtsi
+index 504fb96d3f1c..431742f6b285 100644
+--- a/arch/riscv/boot/dts/starfive/jh7110.dtsi
++++ b/arch/riscv/boot/dts/starfive/jh7110.dtsi
+@@ -201,6 +201,10 @@ opp-1500000000 {
+ 					opp-hz = /bits/ 64 <1500000000>;
+ 					opp-microvolt = <1040000>;
+ 			};
++			opp-1800000000 {
++					opp-hz = /bits/ 64 <1800000000>;
++					opp-microvolt = <1040000>;
++			};
+ 	};
+ 
+ 	display: display-subsystem {

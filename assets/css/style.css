@@ -85,7 +85,7 @@ a, a:active, a:visited {
 }
 
 p, pre {
-	margin: 0 0 15px
+	margin: 0 0 10px 0;
 }
 
 ol li, ul li {
@@ -111,7 +111,7 @@ sub {
 
 code {
 	border-radius: 6px;
-	padding-left: 3px;
+	padding-left: 0px;
 	padding-right: 3px;
 	color: #eee8d5;
 }
@@ -119,12 +119,13 @@ code {
 .highlighter-rouge .rouge-table {
 	width: 600px;
 	width: auto;
-	padding: 10px 0px 10px 30px;
 }
 
 .highlight {
 	background-color: #073642;
 	border-radius: 6px;
+	padding: 10px 5px 5px 10px;
+	overflow: auto;
 }
 
 blockquote {
@@ -260,7 +261,7 @@ blockquote, h4, h5, h6 {
 
 article h1, article h2 {
 	font-size: 16pt;
-	margin: 0 0 10px
+	margin: 5px 0 10px
 }
 
 article h2 {
