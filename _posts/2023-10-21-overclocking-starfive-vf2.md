@@ -82,3 +82,10 @@ All tests were performed out at an ambient temperature of 21ºC.
 25-minute `stress -c 8` run. [Raw data (without heatsink) (timestamp, temp * 1000)](/posts_media/2023-10-21-overclocking-starfive-vf2/vf2_stress_data), [raw data (with heatsink)](/posts_media/2023-10-21-overclocking-starfive-vf2/vf2_stress_data_heatsink).
 
 ![Stress test graph](/posts_media/2023-10-21-overclocking-starfive-vf2/vf2_stress.jpeg)
+
+
+# Known issues
+
+## Long boot from NVMe
+
+My VisionFive 2 after overclocking now loads up to 7 minutes instead of 30 seconds. (Needs further research)
