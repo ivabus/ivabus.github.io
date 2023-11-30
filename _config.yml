@@ -23,6 +23,13 @@ plugins:
 
 markdown: kramdown
 
+social:
+  name: Ivan Bushchik
+  links:
+    - https://github.com/ivabus
+    - https://social.treehouse.systems/@ivabus
+    - https://vk.com/ivabus
+
 kramdown:
   input: GFM
   syntax_highlighter: rouge

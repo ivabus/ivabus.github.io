@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="/assets/fonts/JetBrainsMono-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous"/>
+  <link rel="preload" href="/assets/fonts/JetBrainsMono-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <meta name="viewport" content="width=device-width">
-  <link href="/assets/css/style.css" rel="stylesheet" />
-  {% seo %}
+  <link href="/assets/css/style.css" rel="stylesheet">
+  {% seo title=false %}
+  <title>{% if page.name != "index.md" %}{{page.title}} | {% endif %}{{site.name}}</title>
 </head>
 
 <body>
@@ -52,5 +53,7 @@
     <br>
     <p class="copyright">All content copyright Ivan Bushchik. Powered by <a href="https://github.com/ivabus/nixos">NixOS</a> and <a href="http://jekyllrb.com">Jekyll</a></p>
   </footer>
+
+</div>
 </body>
 </html>

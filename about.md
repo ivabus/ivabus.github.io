@@ -37,4 +37,3 @@ I'm usually known as `ivabus` online. Below are some of the accounts where I pub
 ## Offtopic
 
 - [Devoted to fumo telegram channel](https://ивабус.рф/фумо)
-
