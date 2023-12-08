@@ -254,12 +254,18 @@ blockquote, h4, h5, h6 {
 	font: 1.2em"JetBrains Mono", monospace
 }
 
+.pagination {
+	padding: 10px 0;
+}
+
 .pagination a {
 	color: #b58900;
+	margin: 10px 10px;
 }
 
 .pagination span {
-	color:#839496;
+	color:#0d3c47;
+	margin: 10px;
 }
 
 article h1, article h2 {
@@ -292,7 +298,7 @@ article h6 {
 article img {
 	display: block;
 	width: 100%;
-	max-width: inherit
+	max-width: inherit;
 	border-radius: 5px;
 }
 
@@ -337,7 +343,6 @@ img.center {
 #toc {
 	background-color: #073642;
 	border-radius: 6px;
-	border: 0 0 0 30px;
 	width: auto;
 	padding: 10px 0px 10px 30px;
 	margin-bottom: 10px;
@@ -393,8 +398,30 @@ article h1 a.anchor {
 	color: #b58900
 }
 
-#footer, h1 a:hover {
-	border-color: #002a35
+#footer {
+	border-color: transparent;
+}
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+	height: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #83949688;
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #839496;
 }
 
 
