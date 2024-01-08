@@ -52,6 +52,8 @@
     </details>
     <br>
     <p class="copyright">All content copyright Ivan Bushchik. Powered by <a href="https://github.com/ivabus/nixos">NixOS</a> and <a href="http://jekyllrb.com">Jekyll</a></p>
+    <!-- commit_id may be filled during build -->
+    {% if site.commit_id %}<p class="copyright">Built from <a href="https://github.com/ivabus/website/commit/{{ site.commit_id }}">{{ site.commit_id | slice: 0,7 }}</a></p>{% endif %}
   </footer>
 
 </div>
