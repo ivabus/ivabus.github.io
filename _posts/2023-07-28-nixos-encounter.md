@@ -16,7 +16,7 @@ Note: Nix could be used without NixOS on generic Linux distros and macOS.
 
 ### Step one: Installation
 
-I recently got a free (for me) laptop with Astra Linux preinstalled, used it for 10 minutes in a row and caught myself thinking that I could try to install NixOS on it (I had never had experience with NixOS before, until I came across [Delroth's configs](https://github.com/delroth/infra.delroth.net)).
+I recently got a free (for me) laptop with Astra Linux preinstalled, used it for 10 minutes and caught myself thinking that I could try to install NixOS on it (I had never had experience with NixOS before, until I came across [Delroth's configs](https://github.com/delroth/infra.delroth.net)).
 
 Flashed USB. Booted up. `nixos-generate-config`. `nixos-install`.
 
@@ -28,7 +28,7 @@ I didn't do a very wise thing by installing NixOS on an encrypted partition (bec
 
 Two-file configuration is good for first time, but Nix provides the ability to split configs into modules that I immediately took advantage of. Initially I thought of using a simple script to deploy systems, that copies configs, but then I learned about Nix flakes and any need to use additional scripts has disappeared.
 
-I created `common/` for common configurations (like Nix (as package manager), laptop and user-specific configs), `roles/` for system roles (like gaming (which installs Wine, Steam and enables 32-bit support in PipeWire and Mesa), development (that installs IDEs and compilers), graphical (that enables my sway configuration) and Yggdrasil (that configures Yggdrasil to use [my peer](https://github.com/yggdrasil-network/public-peers/blob/master/europe/russia.md#saint-petersburg))) and `machines/` for machine-specific configuration.
+I created `common/` for common configurations (like Nix (as package manager), laptop and user-specific configs), `roles/` for system roles (like gaming (which installs Wine, Steam and enables 32-bit support in PipeWire and Mesa), development (that installs IDEs and compilers), graphical (that enables my sway configuration) and Yggdrasil (that [configures](https://github.com/ivabus/nixos/blob/master/roles/yggdrasil-client.nix) Yggdrasil to use my private peer, that is also [configured using Nix](https://github.com/ivabus/nixos/blob/master/roles/yggdrasil-peer.nix))) and `machines/` for machine-specific configuration.
 
 ### Step three: Configuring more machines
 
