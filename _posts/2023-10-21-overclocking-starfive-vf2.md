@@ -2,7 +2,6 @@
 layout: post
 summary: "Up to 1.8 GHz without throttling"
 title: "Overclocking StarFive VisionFive 2"
-toc: true
 ---
 
 # TL;DR
@@ -13,7 +12,7 @@ Apply a [patch](/posts_media/2023-10-21-overclocking-starfive-vf2/overclock_vf2.
 
 StarFive VisionFive 2 is a second generation of RISC-V boards from StarFive, which is based on StarFive JH7110 SoC with 4 of SiFive's U74 cores.
 
-The SiFive U74 max frequency in StarFive JH7110 is 1.5 GHz by default, but it can work much better, because even under load the temperature never exceeds 50ºC, so overclocking is worth it. The JH110 can be overclocked to 1.8 GHz, which will be done in this article.
+The SiFive U74 max frequency in StarFive JH7110 is 1.5 GHz by default, but it can perform much better, because even under load the temperature never exceeds 60ºC, so overclocking is worth it. The JH110 can be overclocked to 1.8 GHz, which will be done in this article.
 
 Warning: You are responsible for the safety of your board.
 
@@ -83,7 +82,7 @@ All tests were performed out at an ambient temperature of 21ºC.
 
 25-minute `stress -c 8` run. [Raw data (without heatsink) (timestamp, temp * 1000)](/posts_media/2023-10-21-overclocking-starfive-vf2/vf2_stress_data), [raw data (with heatsink)](/posts_media/2023-10-21-overclocking-starfive-vf2/vf2_stress_data_heatsink).
 
-![Stress test graph](/posts_media/2023-10-21-overclocking-starfive-vf2/vf2_stress.jpeg)
+![Stress test graph](/posts_media/2023-10-21-overclocking-starfive-vf2/vf2_stress.png)
 
 
 # Known issues

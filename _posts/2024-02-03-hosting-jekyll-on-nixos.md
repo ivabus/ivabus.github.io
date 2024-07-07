@@ -2,7 +2,6 @@
 layout: post
 summary: "This post is hosted on NixOS"
 title: "Hosting Jekyll websites on NixOS"
-toc: true
 ---
 
 ## Preamble

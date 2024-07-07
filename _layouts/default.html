@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <link rel="preload" href="/assets/fonts/JetBrainsMono-VariableFont_wght.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/JetBrainsMono-VariableFont_wght.ttf" as="font" type="font/ttf"
+    crossorigin="anonymous">
   <meta name="viewport" content="width=device-width">
+  <link rel="preload" href="/assets/images/background.webp" as="image">
   <link href="/assets/css/style.css" rel="stylesheet">
   {% seo title=false %}
   <title>{% if page.name != "index.md" %}{{page.title}} | {% endif %}{{site.name}}</title>
 </head>
 
 <body>
-  <header id="header">
-    <a href="/"><h1>{{ site.name }}</h1></a>
-  </header>
   <div id="page">
+    <header id="header_top">
+      <a href="/">
+        <h1>{{ site.name }}</h1>
+      </a>
+    </header>
     <div id="sidebar">
       <nav class="menu">
         <ul class="menu">
@@ -22,40 +27,57 @@
           <li class="menu"><a href="/about.html">About</a></li>
         </ul>
       </nav>
-    </div>
-<div id="content">
-  {{ content }}
-</div>
-  <footer id="footer">
-    <details>
-      <summary>GPG key info</summary>
-      <br>
-      <p>
-        <a href="/key.asc">key.asc</a><br>
-        Key ID (sign): <code>2F16FBF3262E090C</code><br>
-        Key ID (encrypt): <code>75D13F197C64C9B2</code><br>
-        Key ID (sign) (revoked): <code>9F6DDABE11A2674D</code><br>
-        Key ID (encrypt) (revoked): <code>F2D682FB55D16001</code><br>
-        Fingerprint: <code>5F8E 8C32 261C 2CA7 D680 792D D146 2CE6 C2FF 77CE</code></p>
-      <ul>
-      <li><a href="http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x5f8e8c32261c2ca7d680792dd1462ce6c2ff77ce">keyserver.ubuntu.com</a></li>
-      <li><a href="https://keys.openpgp.org/vks/v1/by-fingerprint/5F8E8C32261C2CA7D680792DD1462CE6C2FF77CE">keys.openpgp.org</a></li>
-      </ul>
-      <details>
-        <summary>Revoked key <code>3E4E9C7D66E44BF7</code></summary>
-          Key ID: <code>3E4E9C7D66E44BF7</code><br>
-          Fingerprint: <code>77F2 CF96 4D0A 9F5B A3DE 3D31 3E4E 9C7D 66E4 4BF7</code>
-          <ul>
-            <li><a href="http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x77f2cf964d0a9f5ba3de3d313e4e9c7d66e44bf7">keyserver.ubuntu.com</a></li>
-          </ul>
-        </details>
-    </details>
-    <br>
-    <p class="copyright">All content copyright Ivan Bushchik. Powered by <a href="https://github.com/ivabus/nixos">NixOS</a> and <a href="http://jekyllrb.com">Jekyll</a></p>
-    <!-- commit_id may be filled during build -->
-    {% if site.commit_id %}<p class="copyright">Built from <a href="https://github.com/ivabus/website/commit/{{ site.commit_id }}">{{ site.commit_id | slice: 0,7 }}</a></p>{% endif %}
-  </footer>
 
-</div>
+      <footer id="footer_top">
+      {% include webring.html %}
+        <details>
+          <summary>GPG key info</summary>
+          <br>
+          <p>
+            <a href="/key.asc">key.asc</a><br>
+            Key ID (sign): <code>2F16FBF3262E090C</code><br>
+            Key ID (encrypt): <code>75D13F197C64C9B2</code><br>
+            Fingerprint: <code>5F8E 8C32 261C 2CA7 D680 792D D146 2CE6 C2FF 77CE</code>
+          </p>
+          <br>
+        </details>
+        <p class="copyright">All content copyright Ivan Bushchik.</p>
+        <!-- commit_id may be filled during build -->
+        {% if site.commit_id %}<p class="copyright">Built from <a
+            href="https://github.com/ivabus/website/commit/{{ site.commit_id }}">{{ site.commit_id | slice: 0,7 }}</a>
+        </p>
+        {% endif %}
+      </footer>
+    </div>
+    <header id="header_bottom">
+      <a href="/">
+        <h1>{{ site.name }}</h1>
+      </a>
+    </header>
+    <div id="content">
+      {{ content }}
+    </div>
+
+    <footer id="footer_bottom">
+      <div style="text-align: center">{% include webring.html %}</div>
+      <details>
+        <summary>GPG key info</summary>
+        <br>
+        <p>
+          <a href="/key.asc">key.asc</a><br>
+          Key ID (sign): <code>2F16FBF3262E090C</code><br>
+          Key ID (encrypt): <code>75D13F197C64C9B2</code><br>
+          Fingerprint: <code>5F8E 8C32 261C 2CA7 D680 792D D146 2CE6 C2FF 77CE</code>
+        </p>
+        <br>
+      </details>
+      <p class="copyright">All content copyright Ivan Bushchik.</p>
+      <!-- commit_id may be filled during build -->
+      {% if site.commit_id %}<p class="copyright">Built from <a
+          href="https://github.com/ivabus/website/commit/{{ site.commit_id }}">{{ site.commit_id | slice: 0,7 }}</a></p>
+      {% endif %}
+    </footer>
+  </div>
 </body>
+
 </html>

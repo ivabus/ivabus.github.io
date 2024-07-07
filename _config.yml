@@ -1,4 +1,4 @@
-name: "Ivan Bushchik"
+name: "ivabus"
 description: ivabus's site/blog
 url: https://ivabus.dev
 lang: en
@@ -15,11 +15,9 @@ exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'LICENSE', 'shell.
 plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-toc
   - jekyll-feed
   - jekyll-minifier
   - rouge
-  - jekyll-paginate
 
 markdown: kramdown
 
@@ -27,7 +25,6 @@ social:
   name: Ivan Bushchik
   links:
     - https://github.com/ivabus
-    - https://social.treehouse.systems/@ivabus
     - https://vk.com/ivabus
 
 kramdown:
@@ -39,9 +36,6 @@ kramdown:
     block:
       line_numbers: false
     wrap: true
-
-paginate: 5
-paginate_path: "/blog/page:num/"
 
 jekyll-minifier:
   preserve_line_breaks: true

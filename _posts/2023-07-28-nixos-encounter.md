@@ -3,7 +3,6 @@ layout: post
 summary: "I tried out NixOS this month and it was the best Linux experience I've ever had"
 title: "NixOS encounter"
 img: /posts_media/2023-07-28-nixos-encounter/screenshot.webp
-toc: true
 ---
 
 ## What is NixOS?

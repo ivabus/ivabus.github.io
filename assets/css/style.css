@@ -16,7 +16,7 @@ a, abbr, acronym, address, applet, article, aside, audio, big, canvas, caption, 
 
 body {
 	line-height: 1;
-	font: 14px/1.7"JetBrains Mono", monospace
+	font: 14px/1.7"JetBrains Mono", monospace;
 }
 
 h1, h2, h3, h4, h5, h6, p, pre {
@@ -122,7 +122,7 @@ code {
 }
 
 .highlight {
-	background-color: #073642;
+	background-color: #2b2b2b;
 	border-radius: 6px;
 	padding: 10px 5px 5px 10px;
 	overflow: auto;
@@ -221,36 +221,56 @@ blockquote, h4, h5, h6 {
 }
 
 #page {
-	width: 600px;
+	padding-top: 32px;
+	display: flex;
+	flex-direction: row;
+
+	width: 900px;
 	margin: 0 auto;
-	position: relative
+	transform: translateX(-75px);
 }
 
-#footer, #header {
+#sidebar {
+	margin-right: 0;
+	height: fit-content;
+}
+
+
+
+/*footer, #header {
 	width: 600px;
 	margin: 20px auto 0
+}*/
+
+header {
+	transform: rotate(-90deg) translateX(-107%);
+	width: 64px;
+	height: 32px;
+	flex: none;
 }
 
-#header h1 {
+header h1 {
 	font-size: 32px;
-	margin-bottom: 4px
+	margin-bottom: 4px;
+	text-wrap: nowrap;
+	text-align: end;
 }
 
-#header h1 a, article h1 a, body {
+header h1 a, article h1 a, body {
 	border: 0
 }
 
-#footer {
+footer {
 	margin: 10px auto 20px;
-	padding-top: 10px;
+	padding-top: 5px;
 	font-size: .85em;
 	border-top: 1px solid #073642
 }
 
 #sidebar a {
 	border: 0;
-	display: inline;
-	padding: 0 4px;
+/*	padding: 0 4px;*/
+	padding: 4px;
 	font: 1.2em"JetBrains Mono", monospace
 }
 
@@ -321,19 +341,29 @@ img.center {
 	margin: 0 auto 1em
 }
 
-#header, #sidebar, img.center {
+img.center {
 	text-align: center
 }
 
-#sidebar {
-	position: relative;
+#content, #sidebar {
+	border-radius: 16px;
+	backdrop-filter: blur(24px);
+	padding: 16px;
+	box-shadow: 0 0 8px #eee8d5;
+}
+
+#content {
+	max-width: 600px;
+	min-width: 600px;
+	margin-bottom: 32px;
+}
+
+.webring {
+	margin-bottom: 16px;
+}
+
+.webring a {
 	display: inline;
-	left: 0;
-	display: flex;
-	justify-content: center;
-	width: auto;
-	top: 0;
-	margin-bottom: 20px
 }
 
 .menu {
@@ -354,27 +384,94 @@ img.center {
 
 #sidebar li {
 	list-style: none;
-	display: inline
 }
 
-@media all and (max-width:660px) {
-	#content, #footer, #header, #page {
-		width: auto;
-		padding-left: 10.5px;
-		padding-right: 10.5px
+#footer_bottom, #header_top {
+	display: none;
+}
+
+
+#sidebar {
+	text-align: end;
+	/*position: relative;*/
+	/*display: inline;*/
+	margin-right: 0;
+	/*display: flex;*/
+
+	flex: none;
+	justify-content: center;
+	width: 150px;
+	/*top: 0;*/
+	/*margin-bottom: 20px*/
+}
+
+@media all and (max-width:1080px) {
+
+	header {
+		transform: none;
+		text-align: start;
+	}
+
+	#header {
+		text-align: start;
+		margin: 10px;
+	}
+
+	.menu {
+		display: inline;
+		text-align: start;
+		justify-self: unset;
+	}
+
+	#sidebar {
+		justify-items: center;
+		display: flex;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	#header_top {
+		text-align: center;
+		height: auto;
+	}
+
+	#footer_bottom, #header_top {
+		display: block;
+	}
+
+	#footer_top, #header_bottom {
+		display: none;
+	}
+	
+	#content, #header, #page, #sidebar {
+		transform: none;
+		display: block;
+		width: 90%;
+		min-width: 0;
+		max-width: 800px;
+		padding-left: 5%;
+		padding-right: 5%;
+		margin: 0 auto;
+	}
+
+	#sidebar {
+		margin-bottom: 16px;
+		text-align: center;
 	}
 }
 
-body, html {
-	color: #839496
-}
-
-body, html {
-	background-color: #002a35
+body {
+	color: #839496;
+	min-height: 100vh;
+	background: url("/assets/images/background.webp"), linear-gradient(#ddd, #555);
+	background-position: -10%;
+	background-blend-mode: multiply;
+	background-repeat: repeat;
 }
 
 a:hover {
-	color: #b58900
+	color: #b58900;
+	transition: 0.166s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -382,11 +479,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 a, h1 a:active, h1 a:visited {
-	color: #cb4b16
+	color: #cb4b16;
+	padding: 4px;
+	transform: translateX(-4px);
+}
+
+#sidebar a, h1 a {
+	border-radius: 8px;
 }
 
 #sidebar a:hover, h1 a:hover {
-	background-color: #002a35;
+	background-color: #464646;
 	color: #cb4b16
 }
 
@@ -398,8 +501,12 @@ article h1 a.anchor {
 	color: #b58900
 }
 
-#footer {
+footer {
 	border-color: transparent;
+}
+
+.blog {
+	margin-top: 10px;
 }
 
 /* width */
@@ -472,7 +579,7 @@ article h1 a.anchor {
 
 .highlight .gh {
 	color: #268bd2;
-	background-color: #002b36;
+	background-color: #2b2b2b;
 	font-weight: bold;
 }
 

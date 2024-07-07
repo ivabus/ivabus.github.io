@@ -5,6 +5,7 @@ title: About
 toc: true
 ---
 
+{% include_relative abouttext.md %}
 
 ## Skills
 
@@ -24,7 +25,6 @@ I'm usually known as `ivabus` online. Below are some of the accounts where I pub
 
 - [GitHub](https://github.com/ivabus)
 - [Self-hosted Gitea instance (mirror of GitHub)](https://git.ivabus.dev)
-- [Mastodon](https://social.treehouse.systems/@ivabus)
 - [Linux.org.ru](https://www.linux.org.ru/people/ivabus/profile)
 
 ## Contact me
