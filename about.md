@@ -9,10 +9,10 @@ toc: true
 
 ## Skills
 
-- Linux administration
 - Rust
+- Linux administration
 - Git
-- pacman, [tea](https://tea.xyz) and (basic) RPM packaging
+- pacman, [pkgx](https://pkgx.sh) and (basic) RPM packaging
 - Shell scripting
 
 ## Certifications
